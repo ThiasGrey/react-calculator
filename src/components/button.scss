@@ -8,4 +8,23 @@ $border-button: solid 1px #888;
     border-right: $border-button;
     border-bottom: $border-button;
     outline: none;
+
+    &:active {
+        background-color: #ccc;
+    }
+
+    &.double {
+        grid-column: span 2;
+    }
+    &.triple {
+        grid-column: span 3;
+    }
+
+    &.operation {
+        background-color: #fa8231;
+        color: #fff;
+        &:active {
+            background-color: #fa8231cc;
+        }
+    }
 }
